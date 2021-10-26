@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@700;900&family=Big+Shoulders+Stencil+Text:wght@900&family=Karantina:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;  
+}
+img {
+  max-width: 100%;
+}
+#banner {
+  width: 100%;
+  height: 200vh;
+  position: absolute;
+}
+#banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: -1;
+  background: url(https://wallpapercave.com/wp/wp3574209.png) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: 100% 100%;
+}
+.nav-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA3p5DfKquyCVvVnRJQn8nX0qAqF0JUqJ4HpPorqxKmEAGI5I0lgR0il80U9_XfKCsPE0&usqp=CAU);
+    width: 100%;
+    padding: 5px 0;    
+}
+.nav-bar div {
+    width: 20%;
+    text-align: center;
+    
+}
+.nav-bar div a  {
+    margin: 0 4px;
+    padding: 0 4px;
+    text-decoration: none;
+}
+.left {
+    margin-right: 20%;
+    opacity: 0;
+}
+.right {
+    margin-left: 20%;
+    opacity: 0;
+}
+.center {
+  margin-left: 15%;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 58px;  
+}
+a:hover {
+  color: rgb(180, 180, 180);
+}
+.about {
+  background: rgba(0, 0, 0, 0.85);
+  opacity: 1;
+  margin: 0 18%;
+  border-radius: 20px;
+  color: white;
+}
+#about {
+  font-size: 50px;
+}
+.header-img {
+  width: 1px; 
+  height: 1px;
+}
+.container1 {
+  text-align: center;
+  font-family: 'Big Shoulders Stencil Text';
+  font-size: 30px;
+  padding: -5px;
+}
+.container2 {
+  font-family: 'Roboto Condensed';
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 20px;
+}
+#header-img {
+  width: 210px; 
+  height: 170px;
+  border-radius: 10px;
+}
+.container3 {
+  font-family: 'Karantina';
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  justify-content: center;
+}
+.product {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin: 5px 1%;
+  border-radius: 20px;
+  width: 40%;
+  color: white;
+}
+.product h2 {
+  font-size: 35px;
+}
+.product p {
+  font-size: 20px;
+  font-family: 'Roboto Condensed';
+}
+.product-img {
+  width: 300px; 
+  height: 300px;
+}
+.product-img2 {
+  width: 260px; 
+  height: 300px;
+}
+#video {
+  width: 300px; 
+  height: 200px;
+}
+.button1 {
+  background-color: linear-gradient(90deg, rgb(80, 80, 80), rgb(200, 200, 200), rgb(80, 80, 80));
+  color: black;
+  padding: 15px 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px black;
+  display: inline-block;
+  position: relative;
+  transition: all 0.1s ease;
+}
+.button2 {
+  background-color: linear-gradient(90deg, rgb(80, 80, 80), rgb(200, 200, 200), rgb(80, 80, 80));
+  color: black;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px black;
+  display: inline-block;
+  position: relative;
+  transition: all 0.1s ease;
+}
+button:hover {
+  background: rgb(120, 120, 120);
+}
+.button1:active {
+  box-shadow: 0 0 0 gray;
+  transform: translate(2px, 2px);
+}
+#form {
+  justify-content: center;
+  margin: 0 30px;
+  padding: 0 4px;
+  display: flex;  
+}
+.sign-up {
+  text-align: center;
+  color: white;
+}
+.email {
+  border-radius: 8px;
+  padding: 8px 15px;
+}
+footer {
+  color: white;
+  text-align: center;
+}
+
+
+
+@media (max-width: 480px){
+  .container1 {
+    width: 100%;
+  }
+  .header-img {
+    display: none;
+  }
+}
